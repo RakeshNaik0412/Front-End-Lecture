@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        div.main{
+            background-color: antiquewhite;
+            color: rgb(180, 12, 12);
+            height: 1000px;
+            width: 100%;
+            display: grid;
+            /* grid-template-rows: 150px 150px 200px;
+            grid-template-columns: 150px 150px 200px; */
+            grid-template-columns: 100px 1fr 150px;
+            grid-template-rows: 100px 1fr 100px 100px;
+            /* grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,1fr); */
+            row-gap: 5px;
+            column-gap: 5px;
+        }
+        div.item{
+            background-color: aquamarine;
+            border: 2px solid green;
+            /* height: 100px;
+            width: 200px; */
+        }
+        div.header{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        div.footer{
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        div.search{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start:3 ;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="item header">Header</div>
+        <div class="item">Profile</div>
+        <div class="item">Feed</div>
+        <div class="item">News & Ads</div>
+        <div class="item">Suggetions</div>
+        <div class="item">About</div>
+        <div class="item">Contact</div>
+        <div class="item search">Search Bar</div>
+        <!-- <div class="item">Right</div>
+        <div class="item">left</div>
+        <div class="item">Right</div>
+        <div class="item">left</div>
+        <div class="item">Right</div>
+        <div class="item">left</div>
+        <div class="item">Right</div>
+        <div class="item">left</div>
+        <div class="item">Right</div>
+        <div class="item">left</div>
+        <div class="item">Right</div> -->
+        <div class="item footer">Footer</div>
+    </div>
+</body>
+</html>

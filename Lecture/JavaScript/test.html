@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="f1">
+        fisrt name :
+        <input type="text" name="i1" id="">
+        <br>
+        <br>
+        last name :
+        <input type="text" name="i2" id="">
+        <br>
+        <br>
+        <input type="button" value="Submit" onclick="fullname()">
+    </form>
+    <script>
+        function fullname() {
+            fname = f1.i1.value
+            lname = f1.i2.value
+            fulname = fname +  lname
+            document.write(fulname)
+        }
+    </script>
+
+
+</body>
+</html>

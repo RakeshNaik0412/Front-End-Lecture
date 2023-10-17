@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        div {
+            border: solid 5px red;
+            background-color: aqua;
+            margin: 50px;
+            height: 100px;
+            display: inline-block;
+        }
+        body{
+            height: 1500px;
+        }
+
+        .a1 {
+            top: 50px;
+            left: 50px;
+            position: static;
+        }
+
+        .a2 {
+            top: 50px;
+            left: 50px;
+            position: relative;
+        }
+
+        .a3 {
+            top: 50px;
+            left: 50px;
+            position: absolute;
+        }
+
+        .a4 {
+            bottom: 2px;
+            right: 2px;
+            position: fixed;
+        }
+
+        .a5 {
+            top: 5px;
+            left: 5px;
+            position: sticky;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Static, Relative, Absolute, Fixed, Sticky -->
+    <div class="a1">Static Position</div>
+    <div class="a2">Relative Position</div>
+    <div class="a3">Absolute Position</div>
+    <div class="a4">Fixed Position</div>
+    <div class="a5">Stickey Position</div>
+</body>
+
+</html>

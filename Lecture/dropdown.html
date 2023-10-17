@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown</title>
+    <style>
+        /* span {
+            background-color: rgb(223, 148, 50);
+            color: black;
+        } */
+
+        div.dropdown {
+            background-color: rgb(155, 31, 99);
+            display: inline-block;
+        }
+        .hovereffect{
+            display: none;
+            background-color: yellow;
+            border: 2px dashed black ;
+        }
+        .dropdown:hover{
+            background-color: blueviolet;
+        }
+        .dropdown:hover .hovereffect{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="dropdown">
+            <span>Services</span>
+            <div class="hovereffect">
+                <p>After Hover</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

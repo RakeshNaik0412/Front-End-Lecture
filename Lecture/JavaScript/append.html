@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container"></div>
+    <label for="">Username :</label>
+    <input type="text" id="a1">
+    <br><br>
+    <button onclick="change()">Submit</button>
+
+    <script>
+        function change() {
+            cname = document.getElementById("a1").value
+            a = document.createElement("p")
+            a.textContent = "Welcome" + cname
+            test = document.getElementsById("container")
+            test.appendChild(a)
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tag</title>
+    <style>
+        table{
+           width: 100%;
+           box-sizing: border-box;
+           background-color: aquamarine;
+        }
+        table,th,td{
+           border: solid 2px;
+           border-color: rgb(19, 135, 15);
+           border-collapse: collapse;
+           text-align: center;
+           padding: 10px;
+        }
+        td:nth-child(odd){
+            background-color: burlywood;
+        }
+        td:nth-child(even){
+            background-color: cornflowerblue;
+        }
+        td:hover{
+            color: #088178;
+            background-color: rgb(55, 30, 129);
+        }
+        th:hover{
+            color: #0b7f34;
+            background-color: rgb(154, 58, 20);
+        }
+    </style>
+</head>
+<body>
+    <table class="center">
+        <tr>
+            <th style="width: 10%;">Sr No</th>
+            <th style="width: 15%;">Name</th>
+            <th style="width: 25%;" colspan="2">Mob No</th>
+            <th style="width: 10%;">Age</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Shiv</td>
+            <td>9510357785</td>
+            <td>7584693214</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Suraj</td>
+            <td>7530159872</td>
+            <td>7584693214</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Dhanraj</td>
+            <td>8520147963</td>
+            <td>7584693214</td>
+            <td>20</td>
+        </tr>
+    </table>
+</body>
+</html>

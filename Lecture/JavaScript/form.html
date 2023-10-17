@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="mysql" method="get" name="f">
+        User Name :
+        <input type="text" id="f1">
+        <br>
+        <br>
+        Password :
+        <input type="password" id="f2">
+        <br>
+        <br>
+        Confirm Password :
+        <input type="password" id="f3">
+        <br>
+        <br>
+        Age :
+        <input type="number" id="f4">
+        <br>
+        <br>
+        Phone :
+        <input type="text" id="f5">
+        <br>
+        <br>
+        <input type="button" value="Submit" onclick="valid()">
+        <br>
+        <br>
+        <input type="button" value="Reset">
+        <br>
+        <span id="test"></span>
+    </form>
+    <script>
+        function valid() {
+            errorr = ""
+            uname = document.getElementById('f1').value
+            pwd = document.getElementById('f2').value
+            cpwd = document.getElementById('f3').value
+            age = document.getElementById('f4').value
+            contact = document.getElementById('f5').value
+
+            if (uname == 0) {
+                errorr += "Username can not be Empty" + "<br>"
+            }
+            else if (uname> 15) {
+                errorr += "Username should be less than 15 characters" + "<br>"
+            };
+
+            if (pwd == 0) {
+                errorr += "Password can not be Empty" + "<br>"
+            };
+            if (pwd != cpwd) {
+                errorr += "Password and Confirm passsword not Match" + "<br>"
+            };
+            if (pwd<8 || pwd>15) {
+                errorr += "PAssword Should be between 8 to 15 characters" + "<br>"
+            };
+            if (age == 0) {
+                errorr += "Age can not be Zero" + "<br>"
+            }
+            else if (age<18 || age>65) {
+                errorr += "Age should be between 18 to 65" + "<br>"
+            };
+            if (contact == 0) {
+                errorr += "Phone number should not Zero" + "<br>"
+            }
+            else if (contact.length<=10) {
+                errorr += "Phone number should contain 10 digits" + "<br>"
+            }
+            document.getElementById('test').innerHTML = errorr
+        }
+    </script>
+</body>
+</html>

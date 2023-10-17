@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        try {
+            a = 72
+            b = 14
+            if (b == 0) {
+                throw ("can't divided by zero")
+            }
+            else{
+                document.write(a/b)
+            }
+        } catch (error) {
+            // document.getElementById('demo').innerHTML = error.message
+            document.write(error)
+        }
+        finally{
+            document.write("<br>")
+            document.write("This is final statement")
+        }
+    </script>
+</body>
+</html>

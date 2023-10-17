@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Tags</title>
+    <style>
+        p.abc {
+            background-color: aqua;
+        }
+
+        p.def {
+            background-color: aqua;
+        }
+
+        p.ghi {
+            background-color: aqua;
+        }
+        p.jkl {
+            background-color: aqua;
+        }
+
+        span#a1 {
+            background-color: blueviolet;
+            display: inline;
+            height: 50px;
+        }
+
+        span#a2 {
+            background-color: blueviolet;
+            display: inline-block;
+            height: 50px;
+        }
+
+        span#a3 {
+            background-color: blueviolet;
+            display: block;
+            height: 50px;
+        }
+        span#a4 {
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Inline, Inline-Block, Block, None, Flex, Grid -->
+    <p class="abc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span id="a1">Inline Property</span> Omnis
+        itaque, porro veniam nisi assumenda
+        ducimus facere fuga architecto esse in enim <span id="a1">Inline Property</span> dolores incidunt obcaecati
+        voluptatibus dolorem quam voluptatum
+        magnam illum?</p>
+    <p class="def">Lorem ipsum dolor sit amet, <span id="a2">Inline-Block Property</span> consectetur adipisicing elit.
+        Voluptatem ipsam quis quos iure quo animi
+        reiciendis dignissimos ad omnis aut exercitationem <span id="a2">Inline-Block Property</span> magnam deserunt,
+        sunt non itaque consectetur repudiandae
+        labore quasi!</p>
+    <p class="ghi">Lorem ipsum dolor sit <span id="a3">Block Property</span> amet consectetur adipisicing elit. Dolor,
+        illo eveniet porro modi, totam
+        temporibus ipsum quos cupiditate <span id="a3">Block Property</span> nisi ipsa eum esse quibusdam ducimus
+        exercitationem non officia mollitia saepe
+        labore.</p>
+    <p class="jkl">Lorem ipsum dolor sit <span id="a4">Flex Property</span> amet consectetur adipisicing elit. Dolor,
+        illo eveniet porro modi, totam
+        temporibus ipsum quos cupiditate <span id="a4">Flex Property</span> nisi ipsa eum esse quibusdam ducimus
+        exercitationem non officia mollitia saepe
+        labore.</p>
+</body>
+
+</html>

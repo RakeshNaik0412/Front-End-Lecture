@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #abc{
+            background-color: aquamarine;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h3>Document Object Model</h3>
+    <h4 id="test"> HTML,CSS,Bootstrap,Javascript</h4>
+    <p id="demo"></p> -->
+
+    <!-- <label>Enter Value 1</label>
+    <input type="text" id="val1">
+    <br><br>
+    <label>Enter Value 2</label>
+    <input type="text" id="val2">
+    <br><br>
+    <button onclick="add()">Add</button>
+    <br><br>
+    <p id="demo"></p> -->
+
+    <h3>We are learning Front End</h3>
+    <h4 id="a1">Now we are doing Javascript</h4>
+    <button onclick="change()">Change</button>
+
+    <script>
+        // document.getElementById('demo').innerHTML = 
+        // let a = document.getElementById('test')
+        // document.getElementById('demo').innerHTML = "Front End consist of :" +a.innerHTML
+
+        // function add() {
+        //     num1 = Number(document.getElementById('val1').value)
+        //     num2 = Number(document.getElementById('val2').value)
+        //     total = num1 + num2
+
+        //     document.getElementById('demo').innerHTML = total
+        //     document.getElementById('demo').style.color = "red"
+        // }
+
+            function change() {
+                // test = document.getElementsByTagName('h4')[0]
+                // a = document.createAttribute('class')
+                // a.value = 'abc'
+                // test.setAttributeNode(a)
+                a = document.getElementById('a1')
+                a.setAttribute('id','abc')
+            }
+
+    </script>
+
+</body>
+
+</html>

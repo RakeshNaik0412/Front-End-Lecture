@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model 1</title>
+    <style>
+        p{
+            border: solid 4px;
+            border-color: black;
+            color: rgb(155, 16, 155);
+            border-radius: 10px;
+            padding: 4px 5px;
+            margin: 20px;
+        }
+        p.test{
+            border: double 5px;
+            padding-left: 4px;
+            padding-top: 5px;
+            padding-inline-start: 5px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        p#abc{
+            border: dotted 5px;
+            padding: 5px 4px;
+            margin-left: 10px;
+            margin-right: 5px;
+            margin-top: 5px;
+            border-left: solid 5px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+        <p>This is Box Model</p>
+        <p class="test">This is Box Model</p>
+        <p id="abc">This is Box Model</p>
+</body>
+</html>
